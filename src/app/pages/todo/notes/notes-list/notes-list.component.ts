@@ -20,21 +20,26 @@ export class NotesListComponent implements OnInit{
     this.getData();
   }
 
-  public openDialog(id?: number) {
-     const dialogRef = this.dialog.open(NotesDetailsComponent, {
-       data: { id: id }
-     });
-     dialogRef.afterClosed().subscribe(() => {
-      //  this.getTodoLists();
-     });
-   }
-
-  
-   getData() {
+  private getData() {
     this.noteService.list().subscribe(res => {
       if(!res) {return;}
       this.notesItems = res;
       console.log(res)
     })
+  }
+
+  public deleteById(id:any) {
+    this.noteService.delete(id).subscribe(() =>{
+      this.getData();
+    });
+  }
+
+  public openDialog(id?: number) {
+     const dialogRef = this.dialog.open(NotesDetailsComponent, {
+       data: { id: id }
+     });
+     dialogRef.afterClosed().subscribe(() => {
+       this.getData();
+     });
    }
 }

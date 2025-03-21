@@ -34,20 +34,20 @@ export class NotesService {
       })
     );
   }
-
-  create(data:any) {
-    return this.http.post<Notes[]>(this.url, data);
+  
+  create(data: Notes) {
+    return this.http.post<Notes>(this.url, data);
   }
-
-  update(id:number, data:any) {
-    return this.http.put<Notes[]>(`${this.url}/${id}`, data);
-  }
+  
+  update(id: number, data: Notes) {
+    return this.http.put<Notes>(`${this.url}/${id}`, data);
+  }  
 
   delete(id:number) {
-    return this.http.delete<Notes[]>(`${this.url}/${id}`);
+    return this.http.delete<Notes>(`${this.url}/${id}`);
   }
 
   getById(id:number) {
-    return this.http.get(`${this.url}/${id}`);
+    return this.http.get<Notes>(`${this.url}/${id}`);
   }
 }

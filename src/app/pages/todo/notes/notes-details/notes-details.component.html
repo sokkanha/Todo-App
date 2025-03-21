@@ -1,1 +1,28 @@
-<p>notes-details works!</p>
+<section>
+    <mat-dialog-content class="mat-typography">
+        <h1 mat-dialog-title [align]="'center'">NEW NOTES</h1> 
+        <form class="flex flex-col items-center gap-2 pb-2.5" >
+            <input 
+            type="text" 
+            name="title"
+            [(ngModel)]="notesData.title" 
+            placeholder="Input your title..." 
+            class="w-md rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-2 -outline-offset-2 outline-indigo-400 placeholder:text-gray-400 focus:outline-none "
+            >
+            <!--  -->
+            <textarea 
+            name="text"
+            [(ngModel)]="notesData.text" 
+            placeholder="Input your notes ..." 
+            class="w-md min-h-38 rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-2 -outline-offset-2 outline-indigo-400 placeholder:text-gray-400 focus:outline-none "
+            ></textarea>
+        </form>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+    <button mat-stroked-button mat-dialog-close class="btn-cancel">Cancel</button>
+    <button (click)="save()" mat-flat-button [mat-dialog-close]="true" class="btn-apply" cdkFocusInitial >
+        Apply
+    </button>
+    </mat-dialog-actions>
+</section>

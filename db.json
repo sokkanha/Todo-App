@@ -18,7 +18,7 @@
     {
       "id": "7a33",
       "title": "make it news",
-      "completed": false
+      "completed": true
     },
     {
       "id": "3fc2",
@@ -28,7 +28,7 @@
     {
       "id": "961d",
       "title": "fix bugs",
-      "completed": false
+      "completed": true
     },
     {
       "id": "4c24",
@@ -38,25 +38,13 @@
   ],
   "notes": [
     {
-      "id": 1,
-      "title": "Midterm-exam",
+      "title": "Midterm-examfdfa",
       "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
-      "date": "2025-3-20"
+      "date": "2025-3-20",
+      "id": "1"
     },
     {
-      "id": 2,
-      "title": "Midterm-exam",
-      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
-      "date": "2025-3-20"
-    },
-    {
-      "id": 3,
-      "title": "Midterm-exam",
-      "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
-      "date": "2025-3-20"
-    },
-    {
-      "id": 4,
+      "id": "4",
       "title": "Midterm-exam",
       "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',",
       "date": "2025-3-20"

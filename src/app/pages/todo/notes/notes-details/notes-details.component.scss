@@ -1,34 +1,19 @@
-::ng-deep.btn-delete svg path{
-stroke: #ef4444;
-}
-
-::ng-deep.btn-edit svg path{
-stroke:#6366f1;
-}
-::ng-deep .mat-calendar-body-selected {
-    background-color: #6366f1 !important; /* Adjust color as needed */
-    color: white !important;
-}
-.line-clamp {
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Show only 3 lines */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-.expandable:checked + .line-clamp {
-    display: block;
-    -webkit-line-clamp: unset;
-    overflow: visible;
-}
-    
-.see-more-label {
-    display: block;
-    color: #9d174d;
-    cursor: pointer;
-    margin-top: 5px;
-}
-
-.expandable {
-    display: none;
+mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    button{
+        border-radius: 5px;
+        text-transform: uppercase;
+    }
+    .btn-cancel {
+        color:  #6366f1;
+        border: 2px solid  #6366f1;
+        &:hover {
+            background: none;
+        }
+    }
+    .btn-apply {
+        background: #6366f1;
+        color: #ffff;
+    }
 }
